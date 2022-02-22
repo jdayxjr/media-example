@@ -1,0 +1,34 @@
+.content {
+  margin: 0 auto;
+  width: 70%;
+  min-height: 800px;
+  background-color: aqua;
+
+  .box {
+    width: 50%;
+    height: 200px;
+    background-color: orange;
+  }
+
+  .media-box {
+    width: 600px;
+    height: 100px;
+    background-color: purple;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .content {
+    background-color: green;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .content {
+    background-color: red;
+
+    .media-box {
+      width: 300px;
+    }
+  }
+}
